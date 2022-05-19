@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col-mb-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Login</h1>
+                    <h5>Please enter username and password</h5>
+                </div>
+
+                <form [formGroup]="loginForm" (submit)="onSubmit()">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Username</label>
+                        <input  type="text"  formControlName="userName" class="form-control" value="" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your username with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input  type="password" value=""  formControlName="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Log in</button>
+                </form>
+                <span style="margin-top: 8px;">
+                    Don't have an account? 
+                    <a routerLink="/register">Create an account</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

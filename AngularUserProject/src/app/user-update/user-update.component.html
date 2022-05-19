@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row justify-content-center my-4">
+      <div class="col-6">
+        <div class="card">
+          <div class="card-body">
+  
+            <h5 class="card-title text-center">Update user</h5>
+  
+            <form [formGroup]="updateForm" >
+              <div class="mb-3">
+                <label class="form-label">Fullname</label>
+                <input type="text" formControlName="fullName" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email address</label>
+                <input type="email" formControlName="email" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Username</label>
+                <input type="text" formControlName="userName" class="form-control">
+              </div>
+            </form>
+            <button type="submit" (click)="onSubmit()" style="margin-right: 10px"  class="btn btn-primary" [disabled]="!updateForm.valid">Update</button>
+            <button type="submit" (click)="cancel()" class="btn btn-danger">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

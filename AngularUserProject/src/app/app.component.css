@@ -1,0 +1,28 @@
+.navbar-nav {
+    width: 100% !important;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.nav-search {
+    background-color: #fff;
+    display: flex;
+}
+
+.nav-search input {
+    height: 100%;
+    padding: 0 8px;
+    outline: none;
+    border-radius: 2px;
+    border: none;
+}
+
+.nav-search svg {
+    width: 28px;
+    padding: 5px;
+    background-color: aqua;
+    cursor: pointer;
+}
+

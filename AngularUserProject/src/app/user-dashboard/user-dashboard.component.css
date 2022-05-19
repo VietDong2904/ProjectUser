@@ -1,0 +1,34 @@
+.table-center {
+    width: 80vw;
+    border: 1px;
+}
+
+.nav-search {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #333;
+    width: 300px;
+    transform: translateX(50%);
+    margin-top: 30px;
+}
+
+.nav-search input {
+    padding: 0 8px;
+    outline: none;
+    border-radius: 2px;
+    border: none;
+    flex: 1;
+}
+
+.nav-search button {
+    border: none;
+}
+
+.nav-search svg {
+    width: 28px;
+    padding: 5px;
+    background-color: aqua;
+    cursor: pointer;
+}

@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col-mb-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Register</h1>
+                    <h5>Create your account!</h5>
+                </div>
+
+                <form [formGroup]="registerForm" (submit)="onSubmit()">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Full name</label>
+                        <input formControlName="fullName"   type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email address</label>
+                        <input type="email" formControlName="email" class="form-control" value="">
+                      </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Username</label>
+                        <input  type="text" formControlName="userName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input  type="password" formControlName="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary"  [disabled]="!registerForm.valid">Sign up</button>
+                </form>
+                <span style="margin-top: 8px;">
+                    You have an account 
+                    <a routerLink="/login">Let's Login</a>
+                </span>
+               
+            </div>
+        </div>
+    </div>
+</div>
